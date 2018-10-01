@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <div className="site-wrapper">
         <div className="site-wrapper-inner">
         <div className="cover-container">
@@ -58,6 +58,25 @@ class App extends Component {
           </div>
         </div>
 
+        <div class="chats">
+            <div class="loader-wrapper">
+                <div class="loader">
+                <span>{<span></span>}</span>
+                </div>
+                </div>
+            </div>
+
+
+        <ul class="messages clearfix">
+            </ul>
+            <div class="input">
+                <form class="form-inline" id="messageSupport">
+                <div class="form-group">
+                    <input type="text" autocomplete="off" class="form-control" id="newMessage" placeholder="Enter Message" />
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
  </div>
     );
   }
