@@ -112,6 +112,34 @@ body {
     position: fixed;
     bottom: 0;
   }
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  .masthead
+  .mastfoot
+  .cover-container {
+    width: 100%; 
+  }
 
 }
 
+@media (min-width: 62em) {
+  .masthead
+  .mastfoot
+  .cover-container {
+    width: 42rem;
+  }
+}
+
+.chatbubble {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  transform: translateY(300px);
+  transition: transoform .3s ease-in-out;
+}
+
+.chat-bubble.opened {
+  transform: translateY()
+}
