@@ -141,5 +141,88 @@ body {
 }
 
 .chat-bubble.opened {
-  transform: translateY()
+  transform: translateY(0)
 }
+
+.chat .unopened {
+  display: block;
+  background-color: #e23e3e;
+  padding: 10px 15px 10px;
+  position: relative;
+  cursor: pointer;
+  width: 350px;
+  border-radius: 10px 10px 0 0;
+}
+
+.chatbubble .expanded {
+  height: 300px;
+  width: 350px;
+}
+
+.chatbubble .chat-window {
+  overflow: auto;
+}
+
+.chatbubble .load-wrapper {
+  margin-top: 50px;
+  text-align: center; 
+}
+
+.chatbubble .messages {
+  display: none;
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+.chatbuble .messages li {
+  width: 85%;
+  float: left;
+  padding: 10px;
+  border-radius: 5px 5px 5px 0;
+  font-size: 14px;
+  background: #c9f1e6;
+  margin-bottom: 10px;
+}
+
+.chatbubble .messages li .sender {
+  font-weight: 600;
+}
+
+.chatbubble .messages li.support {
+  float: right;
+  text-align: right;
+  color: #fff;
+  background-color: #e33d3d;
+  border-radius: 5px 5px 0 5px;
+}
+
+.chatbubble .chats .input { 
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  left: 0;
+  width: 100%;
+  background: #f0f0f0;
+  display: none;
+}
+
+.chatbubble .chats .input .form-group {
+  width: 100%;
+}
+
+.chatbubble .chats .input .form-group {
+  width: 80%;
+}
+
+.chatbubble .chats .input input {
+  width: 100%;
+}
+
+.chatbubble .chats .input button {
+  width: 20%;
+}
+
+
+
+
