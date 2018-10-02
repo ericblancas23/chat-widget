@@ -223,6 +223,53 @@ body {
   width: 20%;
 }
 
+.chatbubble .chats {
+  display: none;
+}
 
+.chatbubble .login-screen {
+  margin-top: 20px;
+  display: none;
+}
+
+.chatbubble .chats-active,
+.chatbubble .login-screen.active {
+  display: block;
+}
+
+.chatbubble .loader {
+  color: #e23e3e;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 10vh;
+  opacity: 0.8;
+}
+
+.chatbubble .loader span {
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+          animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.chatbubble .loader span:nth-child(odd) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes pulse {
+  to {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.5;
+  }
+}
+
+@keyframes pulse {
+  to {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.5;
+  }
+}
 
 
