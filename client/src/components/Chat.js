@@ -26,6 +26,13 @@ export class Chat extends Component {
         this.showAppropriateChatDisplay = this.showAppropriateChatDisplay.bind
         this.showInitiationDisplay = this.showInitiationDisplay.bind
         this.showChatRoomDisplay = this.showChatRoomDisplay.bind
+        this.loginToChatSession = this.loginToChatSession.bind
+        this.sendMessageToSupport = this.sendMessageToSupport.bind
+        this.NewChatMessage = this.NewChatMessage.bind
+
+    }
+
+    render() {
         
     }
 }
